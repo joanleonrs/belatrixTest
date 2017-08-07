@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="es" ng-app="hbk" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="es" ng-app="hbk" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="es" ng-app="hbk" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="es" ng-app="ordenador">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Belatrix Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="angularjs/html5shiv.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+		<script type="text/javascript" src="angularjs/json3.js"></script>
+		<![endif]-->
+
+		<!-- GENERAL CSS -->
+		<link rel="stylesheet" href="css/dist/app.css" />
+
+	 <script src="http://localhost:35729/livereload.js"></script>
+	</head>
+	<body>
+		<ui-view></ui-view>
+
+		<!-- Librerias -->
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>	
+		<script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+		
+		<!-- Main -->
+		<script type="text/javascript" src="app.js"></script>	
+
+		<!-- Route -->
+		<script type="text/javascript" src="routes.js"></script>
+
+		<!-- Modules -->
+		<script type="text/javascript" src="core/modules/module.core.js"></script>
+		<script type="text/javascript" src="core/modules/module.views.js"></script>
+		<script type="text/javascript" src="core/modules/module.third.parties.js"></script>
+		
+		<!-- Core -->
+		<script type="text/javascript" src="core/constants/core.constants.js"></script>
+		<script type="text/javascript" src="core/constants/constants.environment.js"></script>
+		
+		<!-- Oclazload -->
+		<script src="core/modules/oclazyload.view.js"></script>
+
+		<!-- View -->
+		<script src="views/home/src/js/home.controller.js"></script>
+		
+	</body>
+	
+</html>

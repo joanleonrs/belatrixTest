@@ -1,0 +1,16 @@
+#Ignore Node & Bower
+###########################
+node_modules
+bower_components
+
+# npm
+npm-debug.log
+
+# Modules 'app/core/modules'
+oclazyload.component.js
+oclazyload.flow.js
+oclazyload.partial.js
+oclazyload.view.js
+
+# Constants autogenerado
+constants.environment.js

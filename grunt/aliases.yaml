@@ -1,0 +1,11 @@
+# Registro de tareas a ejecutar con grunt ( connect )
+
+# Tarea por default
+default:
+  - 'environment:LOCAL'
+  - 'connect'
+  - 'watch'
+
+release:
+  - 'ocLazyLoad'
+

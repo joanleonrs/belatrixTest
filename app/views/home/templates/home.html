@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<body> 
+<h2>Belatrix Test</h2>
+
+<table id="departamentos">
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th>Codigo Padre</th>
+      <th>Descripcion Padre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat=" departamento in departamentos track by $index">
+      <td>{{departamento.cod}}</td>
+      <td>{{departamento.nombre}}</td>
+       <td>-</td>
+       <td>-</td>
+      
+    </tr>
+  </tbody>
+</table>
+<br><br>
+<table id="provincia">
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th>Codigo Padre</th>
+      <th>Descripcion Padre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat=" provincia in provincias track by $index">
+     <td>{{provincia.cod}}</td>
+      <td>{{provincia.nombre}}</td>
+     <td>{{provincia.departamento.cod}}</td>
+      <td>{{provincia.departamento.nombre}}</td>
+      
+    </tr>
+  </tbody>
+</table>
+<br><br>
+<table id="distritos">
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th>Codigo Padre</th>
+      <th>Descripcion Padre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat=" distrito in distritos track by $index">
+     <td>{{distrito.cod}}</td>
+      <td>{{distrito.nombre}}</td>
+     <td>{{distrito.provincia.cod}}</td>
+      <td>{{distrito.provincia.nombre}}</td>
+      
+    </tr>
+  </tbody>
+</table>
+
+</body>
+<footer>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12" id="right">
+  </div>
+  </div>
+  </div>
+  </div>
+</footer>
+</html>
+
+
